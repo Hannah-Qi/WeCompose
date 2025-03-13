@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".broadcast.BroadcastActivity">
+
+    <Button
+        android:id="@+id/send_static"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/send_static_broadcast"
+        android:onClick="SendStaticBroadcast"/>
+
+    <Button
+        android:id="@+id/send_dynamic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/send_dynamic_broadcast"
+        android:onClick="SendDynamicBroadcast"/>
+
+    <Button
+        android:id="@+id/send_ordered"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/ordered_broadcast"
+        android:onClick="SendOrderedBroadcast"/>
+
+    <Button
+        android:id="@+id/send_local"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/local_broadcast"
+        android:onClick="SendLocalBroadcast"/>
+
+    <Button
+        android:id="@+id/send_global"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/send_global_broadcast"
+        android:onClick="SendGlobalBroadcast"/>
+
+</LinearLayout>
